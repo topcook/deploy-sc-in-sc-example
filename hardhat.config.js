@@ -54,10 +54,13 @@ module.exports = {
     }
   },
   etherscan: {
-    apiKey: ETHERSCAN_API_KEY //for rinkeby
-  },
-  bscscan: {
-    apiKey: BSCSCAN_API_KEY //for bsc
+    apiKey: {
+      mainnet: ETHERSCAN_API_KEY,
+      rinkeby: ETHERSCAN_API_KEY,
+      ropsten: ETHERSCAN_API_KEY,
+      goerli: ETHERSCAN_API_KEY,
+      bscTestnet : BSCSCAN_API_KEY,
+    }
   },
   solidity: {
   version: "0.8.12",
